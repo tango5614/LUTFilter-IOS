@@ -2,7 +2,7 @@
 build/*
 *.pbxuser
 *.mode1v3
-
+*.xcuserstate
 
 # osx noise
 .DS_Store
