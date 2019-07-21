@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		CB91A56622E30B6600521CF7 /* LUTFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB91A56422E30B6600521CF7 /* LUTFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB91A57322E30BBD00521CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A57222E30BBD00521CF7 /* AppDelegate.swift */; };
-		CB91A57522E30BBD00521CF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A57422E30BBD00521CF7 /* SceneDelegate.swift */; };
-		CB91A57722E30BBD00521CF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A57622E30BBD00521CF7 /* ContentView.swift */; };
 		CB91A57922E30BBE00521CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91A57822E30BBE00521CF7 /* Assets.xcassets */; };
 		CB91A57C22E30BBE00521CF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91A57B22E30BBE00521CF7 /* Preview Assets.xcassets */; };
 		CB91A57F22E30BBE00521CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB91A57D22E30BBE00521CF7 /* LaunchScreen.storyboard */; };
+		CB91A58522E3164800521CF7 /* LUTFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91A58422E3164800521CF7 /* LUTFilter.swift */; };
+		CBEF029822E35C09006CFB8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF029722E35C09006CFB8B /* ViewController.swift */; };
+		CBEF029A22E36EBA006CFB8B /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF029922E36EBA006CFB8B /* FilterCell.swift */; };
+		CBEF02A022E37BED006CFB8B /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF029F22E37BED006CFB8B /* Shaders.swift */; };
+		CBEF02A422E37FDA006CFB8B /* LUTFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB91A56122E30B6600521CF7 /* LUTFilter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,14 @@
 		CB91A56522E30B6600521CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB91A57022E30BBD00521CF7 /* LUTFilterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUTFilterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB91A57222E30BBD00521CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB91A57422E30BBD00521CF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB91A57622E30BBD00521CF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB91A57822E30BBE00521CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB91A57B22E30BBE00521CF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB91A57E22E30BBE00521CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB91A58022E30BBE00521CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB91A58422E3164800521CF7 /* LUTFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTFilter.swift; sourceTree = "<group>"; };
+		CBEF029722E35C09006CFB8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBEF029922E36EBA006CFB8B /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		CBEF029F22E37BED006CFB8B /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEF02A422E37FDA006CFB8B /* LUTFilter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,7 @@
 				CB91A56322E30B6600521CF7 /* LUTFilter */,
 				CB91A57122E30BBD00521CF7 /* LUTFilterExample */,
 				CB91A56222E30B6600521CF7 /* Products */,
+				CBEF02A122E37F0D006CFB8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,8 @@
 			children = (
 				CB91A56422E30B6600521CF7 /* LUTFilter.h */,
 				CB91A56522E30B6600521CF7 /* Info.plist */,
+				CB91A58422E3164800521CF7 /* LUTFilter.swift */,
+				CBEF029F22E37BED006CFB8B /* Shaders.swift */,
 			);
 			path = LUTFilter;
 			sourceTree = "<group>";
@@ -79,12 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				CB91A57222E30BBD00521CF7 /* AppDelegate.swift */,
-				CB91A57422E30BBD00521CF7 /* SceneDelegate.swift */,
-				CB91A57622E30BBD00521CF7 /* ContentView.swift */,
 				CB91A57822E30BBE00521CF7 /* Assets.xcassets */,
 				CB91A57D22E30BBE00521CF7 /* LaunchScreen.storyboard */,
 				CB91A58022E30BBE00521CF7 /* Info.plist */,
 				CB91A57A22E30BBE00521CF7 /* Preview Content */,
+				CBEF029722E35C09006CFB8B /* ViewController.swift */,
+				CBEF029922E36EBA006CFB8B /* FilterCell.swift */,
 			);
 			path = LUTFilterExample;
 			sourceTree = "<group>";
@@ -95,6 +104,13 @@
 				CB91A57B22E30BBE00521CF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBEF02A122E37F0D006CFB8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +174,7 @@
 				TargetAttributes = {
 					CB91A56022E30B6600521CF7 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					CB91A56F22E30BBD00521CF7 = {
 						CreatedOnToolsVersion = 11.0;
@@ -208,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEF02A022E37BED006CFB8B /* Shaders.swift in Sources */,
+				CB91A58522E3164800521CF7 /* LUTFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEF029822E35C09006CFB8B /* ViewController.swift in Sources */,
+				CBEF029A22E36EBA006CFB8B /* FilterCell.swift in Sources */,
 				CB91A57322E30BBD00521CF7 /* AppDelegate.swift in Sources */,
-				CB91A57522E30BBD00521CF7 /* SceneDelegate.swift in Sources */,
-				CB91A57722E30BBD00521CF7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,22 +377,31 @@
 		CB91A56A22E30B6600521CF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W383AX2CKU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					GLES_SILENCE_DEPRECATION,
+					"DEBUG=1",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = LUTFilter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwenjie.LUTFilter.LUTFilter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,19 +410,24 @@
 		CB91A56B22E30B6600521CF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W383AX2CKU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = LUTFilter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwenjie.LUTFilter.LUTFilter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -407,17 +440,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "LUTFilterExample/Preview\\ Content";
 				DEVELOPMENT_TEAM = W383AX2CKU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LUTFilterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwenjie.LUTFilter.example.LUTFilterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,17 +464,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "LUTFilterExample/Preview\\ Content";
 				DEVELOPMENT_TEAM = W383AX2CKU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LUTFilterExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangwenjie.LUTFilter.example.LUTFilterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
